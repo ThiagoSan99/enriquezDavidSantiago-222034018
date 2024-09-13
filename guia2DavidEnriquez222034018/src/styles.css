@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --colorTitulo: #ff4900;
+    --variableTitulo: 2rem;
+    --varParrafo: 1rem;
+    --colParrafo: #0093FF;
+    --fontPar: Arial;
+    --varParrafo2: 12px;
+    --colParrafo2: #c500ff;
+    --fontVin: bold;
+    --colVin: #001bff;
+    --hover-color: #ff6600;
+    --visited-color: #4CAF50;
+    --variableParrafo: 1.5rem;
+    --variableEncabezado: 1.5rem;
+    --colorEncabezado:#ffffff;
+    --color1: #000000;
+    --coloresfila: #bec1c3;
+    --coleresfila2: #045795;
+    --fuente: Nerko one;
+    --coloresdiv:#504afd; 
+    --anchocon: 100%;
+    --altocon: 650px;
+    --margendiv: auto;
+    --colordiv2: #be3a7c;
+    --anchoHead: 100%;
+    --altoHead: 90px;
+    --colorLogo: #ffcc00;
+
+
+}
+.titulo{
+    color: var(--colorTitulo);
+    font-size: var(--variableTitulo);
+}
+.parrafo{
+    color: var(--colParrafo);
+    font-size: var(--varParrafo);
+    font: var(--fontPar)
+}
+.parrafo2{
+    color: var(--colParrafo2);
+    font-size: var(--varParrafo2);
+    font: var(--fuente)
+}
+.vinculos{
+    color:var(--colVin);
+    font: var(--fontVin);
+    text-decoration: none;
+}
+.vinculos:visited {
+    color: var(--visited-color);
+}
+  
+.vinculos:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+.fila2{
+    background-color: var(--coleresfila2);
+    font-size: var(--variableParrafo);
+    font: var(--fuente);
+    color: var(--colorEncabezado);
+}
+html,body{
+    color: var(--color1);
+    font-size: var(--variableparrafo);
+}
+p{
+
+    color: var(--color1);
+    font-size: var(--variableParrafo);
+
+}
+
+th{
+    color: var(--colorEncabezado);
+    font-size: var(--variableparrafo);  
+    background-color:var(--color1);
+    font: var(--fuente);
+}
+td{
+    color: var(--color1);
+    font-size: var(--variableparrafo);  
+    background-color:var(--coloresfila);
+    font: var(--fuente);
+}
+.contenedor{
+    background-color: #2c85ca;
+    width: var(--anchocon);
+    height: var(--altocon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    background-color: #717e88;
+    width: var(--anchocon);
+    height: var(--altoHead);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 65px;
+    height: 50px;
+    background-color: var(--colorLogo);
+    border: 4px solid #000000;
+    margin-left: 25px;
+}
+.buscador{
+    margin-right: 25px;
+}
+.slideBar{
+    width: 200px;
+    height: 430px;
+    background-color: #717e88;
+    border: 2px solid black;
+    margin-right: 80px;
+}
+.content{
+    width: 70%;
+    height: 400px;
+    background-color: #129332;
+    border: 2px solid black;
+    text-align: center;
+    font-size: var(--varParrafo);
+    font: var(--fontPar);
+}
+.footer{
+    background-color: var(--colorLogo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 110px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.foot{
+    background-color: var(--coloresfila);
+    width: 150px;
+    height: 70px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: var(--varParrafo);
+    font: var(--fontPar);
+}
+.contenedorD{
+    background-color: #2c85ca;
+    width: var(--anchocon);
+    height: var(--altocon);
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+}
