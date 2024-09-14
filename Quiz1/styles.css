@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+.container {
+    display: flex;
+    background-color: #355fde;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.header_container {
+    background-color: #deca35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 10px;
+}
+.logo_img{
+    width:  150px;
+    height: 50px;
+    background-color: #35de87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #508067;
+}
+.social_container{
+    width:  300px;
+    height: 10vh;
+    background-color: #858585;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid rgb(78, 78, 78);
+}
+
+.social_mini {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------- */
+.nav_container {
+    width: 91%;
+    height: 10vh;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons_container {
+    background-color: #355fde;
+    width: 98%;
+    height: 6vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button {
+    width: 15%;
+    height: 70%;
+    background-color: #deca35;
+    border-radius: 10px;
+    border: 3px solid   #918639;
+}
+.slider_content{
+    width: 91%;
+    height: 30%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.features_container{
+    width: 91%;
+    height: 35%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.feat {
+    width: 15%;
+    height: 80%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
