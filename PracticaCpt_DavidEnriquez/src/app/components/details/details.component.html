@@ -1,0 +1,44 @@
+<div class="p-fluid">
+
+  <form [formGroup]="prinForm" style="width: 100%" >
+    <div class="p-field">
+      <p>Nombre</p>
+      <div class="p-field1">
+        <div class="p-field p-input-icon-left">
+          <i class="pi pi-user"></i>
+          <input id="name" type="text" pInputText class="w-full" placeholder="Primer nombre" formControlName="name" >
+        </div>
+        <div class="p-field p-input-icon-left">
+          <i class="pi pi-user"></i>
+          <input id="lastname" type="text" pInputText class="w-full" placeholder="Apellido" formControlName="lastname" >
+        </div>
+      </div>
+    </div>
+    <div *ngIf="prinForm.controls['name'].invalid && prinForm.controls['name'].touched
+    || prinForm.controls['lastname'].invalid && prinForm.controls['lastname'].touched" class="error">
+      El nombre y apellido son requeridos
+    </div>
+    <div class="p-field" >
+      <p>Correo</p>
+      <div class="p-field p-input-icon-left">
+        <i class="pi pi-envelope"></i>
+        <input pInputText type="email" class="w-full" placeholder="Correo electrónico" formControlName="email" >
+      </div>
+    </div>
+    <div *ngIf="prinForm.controls['email'].invalid && prinForm.controls['email'].touched" class="error">
+      El correo debe ser valido
+    </div>
+    <div class="p-field">
+      <p>Teléfono</p>
+      <div class="p-field p-input-icon-left">
+        <i class="pi pi-phone"></i>
+        <input id="phone" pInputText type="tel" class="w-full"  placeholder="Teléfono" formControlName="phone" >
+      </div>
+    </div>
+    <div *ngIf="prinForm.controls['phone'].invalid && prinForm.controls['phone'].touched" class="error">
+      El número es necesario
+    </div>
+</form>
+
+
+</div>

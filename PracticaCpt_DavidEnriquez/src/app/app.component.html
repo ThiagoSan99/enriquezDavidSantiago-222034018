@@ -1,0 +1,16 @@
+
+<div class="d-flex align-items-center " class="fondo p-fluid">
+  <div class="p-fluid">
+    <h2>Formulario de Solicitud de Vacaciones</h2>
+  </div>
+  <app-details [prinForm]="prinForm"></app-details>
+  <app-manager [manForm]="manForm"></app-manager>
+  <app-information [inForm]="inForm"></app-information>
+  
+  <div class="p-fluid">
+    <button pButton type="submit" label="Registrar" (onClick)="onSubmit()" ></button> 
+  </div>
+  
+</div>
+
+

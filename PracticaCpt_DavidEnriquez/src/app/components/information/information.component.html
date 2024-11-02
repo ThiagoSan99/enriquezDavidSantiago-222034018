@@ -1,0 +1,33 @@
+<div class="p-fluid">
+    <form [formGroup]="inForm" style="width: 100%;">
+        <div class="p-field">
+            <p>Fecha de inicio</p>
+            <p-calendar 
+                id="startdate" 
+                formControlName="startdate" 
+                showIcon="true" 
+                icon="pi pi-calendar" 
+                iconPos="left">
+            </p-calendar>
+        </div>
+        <div *ngIf="inForm.controls['startdate'].invalid && inForm.controls['startdate'].touched" class="error">
+            La fecha de inicio es requerida
+        </div>
+
+        <div class="p-field">
+            <p>Fecha de finalización</p>
+            <p-calendar 
+                id="finaldate" 
+                formControlName="finaldate" 
+                showIcon="true" 
+                icon="pi pi-calendar" 
+                iconPos="left">
+            </p-calendar>
+        </div>
+        <div *ngIf="inForm.controls['finaldate'].invalid && inForm.controls['finaldate'].touched" class="error">
+            La fecha de finalización es requerida
+        </div>
+    </form>
+</div>
+
+

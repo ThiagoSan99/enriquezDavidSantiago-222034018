@@ -1,0 +1,28 @@
+
+<div class="p-fluid">
+  <form [formGroup]="manForm" style="width: 100%" >
+    <div class="p-field ">
+      <p>Nombre del gerente</p>
+      <div class="p-field p-input-icon-left">
+        <i class="pi pi-user"></i>
+        <input id="nameboss" type="text" pInputText class="w-full" placeholder="Nombre completo" formControlName="nameboss">
+      </div>
+    </div>
+    <div *ngIf="manForm.controls['nameboss'].invalid && manForm.controls['nameboss'].touched" class="error">
+      El nombre del gerente es necesario
+    </div>
+    <div class="p-field" >
+      <p>Correo electrónico del gerente</p>
+      <div class="p-field p-input-icon-left">
+        <i class="pi pi-envelope"></i>
+        <input id="email" pInputText type="email" class="w-full" placeholder="Correo electrónico" formControlName="email">
+      </div>
+    </div>
+    <div *ngIf="manForm.controls['email'].invalid && manForm.controls['email'].touched" class="error">
+      El correo debe ser valido
+    </div>
+  </form>
+ 
+</div>
+
+
