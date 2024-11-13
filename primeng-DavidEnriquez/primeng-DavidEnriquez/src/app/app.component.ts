@@ -8,10 +8,12 @@ import { PasswordModule } from 'primeng/password';
 import { LoginTestComponent } from './components/login-test/login-test.component';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,ButtonModule,FormularioPlantilla1Component,LoginComponent, ReactiveFormsModule, PasswordModule, LoginTestComponent, CommonModule],
+  imports: [RouterOutlet,ButtonModule,FormularioPlantilla1Component,LoginComponent, 
+    ReactiveFormsModule, PasswordModule, LoginTestComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
