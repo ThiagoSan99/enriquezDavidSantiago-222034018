@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|d:\\form\\enriquezdavidsantiago-222034018\\backend\\apibackend\\apibackend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|solutionrelative:apibackend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|d:\\form\\enriquezdavidsantiago-222034018\\backend\\apibackend\\apibackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|solutionrelative:apibackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|d:\\form\\enriquezdavidsantiago-222034018\\backend\\apibackend\\apibackend\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|solutionrelative:apibackend\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|d:\\form\\enriquezdavidsantiago-222034018\\backend\\apibackend\\apibackend\\apibackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{97203D3D-7E9C-4374-81A7-BBD9C0EB5A90}|ApiBackend\\ApiBackend.csproj|solutionrelative:apibackend\\apibackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBackend\\Program.cs",
+              "ToolTip": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Program.cs",
+              "RelativeToolTip": "ApiBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T05:29:30.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiBackend",
+              "DocumentMoniker": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\ApiBackend.csproj",
+              "RelativeDocumentMoniker": "ApiBackend\\ApiBackend.csproj",
+              "ToolTip": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\ApiBackend.csproj",
+              "RelativeToolTip": "ApiBackend\\ApiBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-15T04:02:23.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Users.cs",
+              "RelativeDocumentMoniker": "ApiBackend\\Users.cs",
+              "ToolTip": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Users.cs",
+              "RelativeToolTip": "ApiBackend\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:02:34.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ApiBackend\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\form\\enriquezDavidSantiago-222034018\\Backend\\ApiBackend\\ApiBackend\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ApiBackend\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAADkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:02:00.185Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

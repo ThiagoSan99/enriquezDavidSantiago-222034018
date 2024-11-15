@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ApiBackend.Controllers.UsersController",
+    "Method": "Send",
+    "RelativePath": "api/Users/Registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "ApiBackend.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
