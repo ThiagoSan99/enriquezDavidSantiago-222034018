@@ -6,6 +6,6 @@
     <app-form2 [form2]="form2"></app-form2>
     <app-form3 [form3]="form3"></app-form3>
     <div class="p-fluid fondo">
-        <p-button type="submit" label="Enviar" (onClick)="onSubmit()"></p-button>
+        <p-button type="submit" label="Enviar" (onClick)="onSubmit()" [disabled]="!form1.valid || !form2.valid || !form3.valid"></p-button>
     </div>
 

@@ -12,8 +12,8 @@ export class RegisterService {
 
   constructor(private http: HttpClient) { }
       
-    send(username: string, lastname: string, correo: string, telefono: string, namegerente: string, correogerente: string, fechainicio: string, fechafin: string, notas: string):Observable<any>{
-    const body = {username,lastname,correo,telefono,namegerente,correogerente,fechainicio,fechafin,notas};
-    return this.http.post(`${this.apiUrl}/Registrar`, {username,lastname,correo,telefono,namegerente,correogerente,fechainicio,fechafin,notas});
+    Registrar(username: string, lastname: string, email: string, phone: string, namegerente: string, emailgerente: string, dateinicio: string, datefin: string, notas: string):Observable<any>{
+    const body = {username,lastname,email,phone,namegerente,emailgerente,dateinicio,datefin,notas};
+    return this.http.post(`${this.apiUrl}/Registrar`, {username,lastname,email,phone,namegerente,emailgerente,dateinicio,datefin,notas});
     }
 }

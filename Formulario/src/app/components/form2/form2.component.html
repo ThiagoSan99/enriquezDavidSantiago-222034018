@@ -4,20 +4,20 @@
       <p>Nombre del gerente</p>
       <div class="p-field p-input-icon-left">
         <i class="pi pi-user"></i>
-        <input id="nameboss" type="text" pInputText class="w-full" placeholder="Nombre completo" formControlName="name">
+        <input id="nameboss" type="text" pInputText class="w-full" placeholder="Nombre completo" formControlName="nameg">
       </div>
     </div>
-    <div *ngIf="form2.controls['name'].invalid && form2.controls['name'].touched" class="error">
+    <div *ngIf="form2.controls['nameg'].invalid && form2.controls['nameg'].touched" class="error">
       El nombre del gerente es necesario
     </div>
     <div class="p-field" >
       <p>Correo electrónico del gerente</p>
       <div class="p-field p-input-icon-left">
         <i class="pi pi-envelope"></i>
-        <input id="email" pInputText type="email" class="w-full" placeholder="Correo electrónico" formControlName="email">
+        <input id="emailg" pInputText type="emailg" class="w-full" placeholder="Correo electrónico" formControlName="emailg">
       </div>
     </div>
-    <div *ngIf="form2.controls['email'].invalid && form2.controls['email'].touched" class="error">
+    <div *ngIf="form2.controls['emailg'].invalid && form2.controls['emailg'].touched" class="error">
       El correo debe ser valido
     </div>
   </form>

@@ -30,8 +30,8 @@ export class HomeComponent {
       phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]]
     });
     this.form2 = this.fb.group({
-      name: ['', Validators.required],
-      email: ['',[Validators.required, Validators.email]]
+      nameg: ['', Validators.required],
+      emailg: ['',[Validators.required, Validators.email]]
     });
     this.form3 = this.fb.group({
       startdate: ['',Validators.required],
@@ -41,11 +41,11 @@ export class HomeComponent {
   }
   onSubmit() {
 
-    const {name,apelli,email,tel} = this.form1.value;
+    const {name,lastname,email,phone} = this.form1.value;
     const {nameg,emailg} = this.form2.value;
-    const {inicio,fin,text} = this.form3.value;
+    const {startdate,finaldate,text} = this.form3.value;
 
-    this.registerService.send(name,apelli,email,tel,nameg,emailg,inicio,fin,text).subscribe({
+    this.registerService.Registrar(name,lastname,email,phone,nameg,emailg,startdate,finaldate,text).subscribe({
       next: (response) => {
         console.log("Información enviada Exitosamente", response);
       },
