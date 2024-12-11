@@ -1,0 +1,45 @@
+<div class="flex justify-content-center align-items-center mb-3">
+    <h1>Gestion</h1>
+</div>
+<p-table 
+    [value]="products" 
+    [paginator]="true" 
+    [rows]="3" 
+    [tableStyle]="{ 'min-width': '50rem', 'max-width': '1200px'}" 
+    styleClass="table_products">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Nombre Comercial</th>
+            <th>Nombre Generico</th>
+            <th>Cantidad</th>
+            <th>Lote</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+            <th>Forma Farmaceutica</th>
+            <th>Cum</th>
+            <th>Fecha de vencimiento</th>
+            <th>Acciones</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{ product.id}}</td>
+            <td>{{ product.comercialName}}</td>
+            <td>{{ product.genericName }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.lote }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.pharmaceuticForm }}</td>
+            <td>{{ product.cum }}</td>
+            <td>{{ product.finalDate | date: 'dd/MM/yyyy' }}</td>
+            <td class="td_style">
+                <div class="flex">
+                    <button pButton type="button" label="Editar" class="p-button-sm p-button-warning mr-2" (click)="update(product.id)"></button>
+                    <button pButton type="button" label="Eliminar" class="p-button-sm p-button-danger" (click)="Delete(product.id)"></button>
+                </div>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

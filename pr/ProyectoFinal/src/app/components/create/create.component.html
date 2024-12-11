@@ -1,0 +1,118 @@
+<div class="flex align-items-center	justify-content-center flex-column box_main">
+    <div class="card box_biggest">
+        <form [formGroup]="form1">
+            <div class="form_padre">
+                <div class="flex justify-content-center align-items-center">
+                    <h1>Agregar Productos</h1>
+                </div>
+                <div class="margin_divs">
+                    <p>Nombre Comercial</p>
+                    <div class="">
+                        <div class=" p-input-icon-left w-full">
+                            <i class="pi pi-check-square"></i>
+                            <input id="comercialname" type="text" pInputText class="w-full" placeholder="Nombre Comercial"
+                                formControlName="comercialname">
+                        </div>
+                        <div *ngIf="form1.controls['comercialname'].invalid && form1.controls['comercialname'].touched"
+                            class="error">
+                            El nombre es requerido
+                        </div>
+                    </div>
+                </div>
+                <div class="margin_divs">
+                    <p>Nombre Generico</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-check-square"></i>
+                        <input id="genericname" type="text" pInputText class="w-full" placeholder="Nombre Generico"
+                            formControlName="genericname">
+                    </div>
+                    <div *ngIf="form1.controls['genericname'].invalid && form1.controls['genericname'].touched " class="error">
+                        El nombre es requerido
+                    </div>
+                </div>
+
+                <div class="margin_divs">
+                    <p>Cantidad</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-bars"></i>
+                        <input pInputText type="number" class="w-full" placeholder="Cantidad" formControlName="quantity">
+                    </div>
+                    <div *ngIf="form1.controls['quantity'].invalid && form1.controls['quantity'].touched" class="error">
+                        Debe ingresar una cantidad
+                    </div>
+                </div>
+                
+                <div class="margin_divs">
+                    <p>Lote</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-building-columns"></i>
+                        <input id="lote" pInputText type="text" class="w-full" placeholder="Lote" formControlName="lote">
+                    </div>
+                    <div *ngIf="form1.controls['lote'].invalid && form1.controls['lote'].touched" class="error">
+                        Debe ingresar un lote
+                    </div>
+                </div>
+                
+                <div class="margin_divs">
+                    <p>Precio</p>
+                    <div class="">
+                        <div class=" p-input-icon-left w-full">
+                            <i class="pi pi-dollar"></i>
+                            <input id="price" type="number" pInputText class="w-full" placeholder="Precio"
+                                formControlName="price">
+                        </div>
+                        <div *ngIf="form1.controls['price'].invalid && form1.controls['price'].touched" class="error">
+                            El precio es requerido
+                        </div>
+                    </div>
+                </div>
+                <div class="margin_divs">
+                    <p>Descripcion</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-book"></i>
+                        <input id="description" type="text" pInputText class="w-full" placeholder="Descripcion"
+                            formControlName="description">
+                    </div>
+                    <div *ngIf="form1.controls['description'].invalid && form1.controls['description'].touched " class="error">
+                        Debe ingresar una descripcion
+                    </div>
+                </div>
+
+                <div class="margin_divs">
+                    <p>Forma Farmaceutica</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-ethereum"></i>
+                        <input pInputText type="text" class="w-full" placeholder="Forma Farmaceutica"
+                            formControlName="pharmaceuticform">
+                    </div>
+                    <div *ngIf="form1.controls['pharmaceuticform'].invalid && form1.controls['pharmaceuticform'].touched"
+                        class="error">
+                        Debe ingresar la forma farmaceutica
+                    </div>
+                </div>
+                <div class="margin_divs">
+                    <p>Cum</p>
+                    <div class=" p-input-icon-left w-full">
+                        <i class="pi pi-barcode"></i>
+                        <input id="cum" pInputText type="tel" class="w-full" placeholder="Cum" formControlName="cum">
+                    </div>
+                    <div *ngIf="form1.controls['cum'].invalid && form1.controls['cum'].touched" class="error">
+                        El número debe tener 10 digitos
+                    </div>
+                </div>
+                
+                <div class="margin_divs">
+                    <p>Fecha de caducidad</p>
+                    <p-calendar id="finaldate" [style]="{'width': '100%'}" formControlName="finaldate" showIcon="true" icon="pi pi-calendar" iconPos="left">
+                    </p-calendar>
+                    <div *ngIf="form1.controls['finaldate'].invalid && form1.controls['finaldate'].touched" class="error">
+                        La fecha de finalización es requerida
+                    </div>
+                </div>
+                <div class="flex justify-content-center align-items-center mt-4 mb-3">
+                    <button pButton type="submit" label="Agregar" class="btn_dark" style="width: 200px;" (click)="onSubmit()"></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

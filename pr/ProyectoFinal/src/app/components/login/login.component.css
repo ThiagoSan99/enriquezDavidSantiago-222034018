@@ -1,0 +1,10 @@
+.son_box {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(242, 255, 238);
+}
+
+.small_div {
+    width: 500px;
+}

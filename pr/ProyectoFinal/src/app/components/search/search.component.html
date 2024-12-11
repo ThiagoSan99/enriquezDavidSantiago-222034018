@@ -1,0 +1,78 @@
+<div class="filter-users-container">
+    <div class="search-class">
+        <div class="flex justify-content-center align-items-center flex-column">
+            <h2 class="mb-3">Buscar producto por ID</h2>
+            <div>
+                <input 
+                    pInputText
+                    type="number"
+                    placeholder="Ingresa el ID del usuario"
+                    [(ngModel)]="productId"
+                />
+                <button pButton 
+                    type="button"
+                    label="Buscar"
+                    class="btn_dark"
+                    (click)="searchProductById()"
+                ></button>
+            </div>
+            <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+        </div>
+        <div class="flex justify-content-center align-items-center flex-column">
+            <h2 class="mb-3">Buscar producto por nombre</h2>
+            <div>
+                <input 
+                    pInputText
+                    type="text"
+                    placeholder="Ingresa una palabra clave"
+                    [(ngModel)]="productName"
+                />
+                <button pButton 
+                    type="button"
+                    label="Buscar"
+                    class="btn_dark"
+                    (click)="searchProductByName()"
+                ></button>
+                <p *ngIf="errorMessageName" class="error-message">{{ errorMessageName }}</p>
+            </div>
+        </div>
+    </div>
+  
+    <p-table
+    *ngIf="products.length"
+    [value]="products" 
+    [paginator]="true" 
+    [rows]="3" 
+    [tableStyle]="{ 'min-width': '50rem', 'max-width': '1200px'}" 
+    styleClass="table_products">
+    >
+      <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Nombre Comercial</th>
+            <th>Nombre Generico</th>
+            <th>Cantidad</th>
+            <th>Lote</th>
+            <th>Precio</th>
+            <th>Descripcion</th>
+            <th>Forma Farmaceutica</th>
+            <th>Cum</th>
+            <th>Fecha de vencimiento</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{ product.id}}</td>
+            <td>{{ product.comercialName}}</td>
+            <td>{{ product.genericName }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.lote }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.pharmaceuticForm }}</td>
+            <td>{{ product.cum }}</td>
+            <td>{{ product.finalDate | date: 'dd/MM/yyyy' }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>

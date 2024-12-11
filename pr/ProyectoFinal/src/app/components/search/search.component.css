@@ -1,0 +1,15 @@
+.search-class {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.filter-users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swal-container {
+    background-color: black;
+}
